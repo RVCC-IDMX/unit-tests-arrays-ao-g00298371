@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 /* eslint-disable no-unused-vars */
 /* eslint-disable no-param-reassign */
 /*
@@ -26,6 +27,7 @@
  */
 function getFirstValue(arr) {
   // write your code here & return value
+  return arr[0];
 }
 
 /**
@@ -38,6 +40,7 @@ function getFirstValue(arr) {
  */
 function makeArray(a, b, c, d) {
   // write your code here & return value
+  return [a, b, c, d];
 }
 
 /**
@@ -48,7 +51,7 @@ function makeArray(a, b, c, d) {
  *
  */
 function createFirstFivePrimes() {
-  // write your code here & return value
+  return [2, 3, 5, 7, 11];
 }
 /**
  * Creates a new array with a number of elements
@@ -59,7 +62,11 @@ function createFirstFivePrimes() {
  * ? must use a for loop
  */
 function createSizedArray(size) {
-  // write your code here & return value
+  const arr = [];
+  for (let index = 0; index < size; index++) {
+    arr[index] = index;
+  }
+  return arr;
 }
 
 /**
@@ -70,7 +77,8 @@ function createSizedArray(size) {
  * ? https://bit.ly/39z4FTE - Adding and Deleting Array Elements
  */
 function modifyArrayByAdding(arr) {
-  // write your code here & return value
+  arr.push(1);
+  return arr;
 }
 
 /**
