@@ -88,7 +88,9 @@ function modifyArrayByAdding(arr) {
  * ? example: [1, 2, 3, 4, 5] => [2, 3, 4]
  */
 function modifyArrayByDeleting(arr) {
-  // write your code here & return value
+  arr.shift(); // remove the first element
+  arr.pop(); // remove the last element
+  return arr; // return the modified array
 }
 
 /**
@@ -98,8 +100,9 @@ function modifyArrayByDeleting(arr) {
  * @returns {*} - the element at the specified index
  * ? example: [1, 2, 3, 4, 5], index = 2 => 3
  */
-function findElementAtIndex(arr, index) {
-  // write your code here & return value
+function findElementAtIndex(arr, index, value) {
+  arr[index] = value; // replace the element at the specified index with the new value
+  return arr; // return the modified array
 }
 
 /**
@@ -111,7 +114,7 @@ function findElementAtIndex(arr, index) {
  * ? hint: https://bit.ly/2ZyFaAj - Array Searching and Sorting Methods
  */
 function findElementByValue(arr, value) {
-  // write your code here & return value
+  return arr.indexOf(value); // return the index of the element with the specified value
 }
 
 /**
@@ -123,7 +126,8 @@ function findElementByValue(arr, value) {
  * ? example: [1, 2, 3, 4, 5], index = 2, value = 0 => [1, 2, 0, 4, 5]
  */
 function changeElementAtIndex(arr, index, value) {
-  // write your code here & return value
+  arr[index] = value; // replace the element at the specified index with the new value
+  return arr; // return the modified array
 }
 
 /**
@@ -134,7 +138,7 @@ function changeElementAtIndex(arr, index, value) {
  * ? https://mzl.la/3ib7Dm3
  */
 function makeStringFromArray(arr) {
-  // write your code here & return value
+  return arr.join(''); // join array elements into a string with no separator and return it
 }
 
 /**
@@ -145,7 +149,7 @@ function makeStringFromArray(arr) {
  * ? https://bit.ly/39ASLc0 - The spread operator
  */
 function createShallowCopy(arr) {
-  // write your code here & return value
+  return [...arr]; // return a new array containing all the elements of the original array
 }
 
 module.exports = {
