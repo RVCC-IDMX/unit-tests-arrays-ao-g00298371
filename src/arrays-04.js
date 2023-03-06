@@ -84,7 +84,11 @@ function findMinMax(arr) {
  * ? https://bit.ly/39ASLc0
  */
 function getTelNo(numbers) {
-
+  const arr = [...numbers];
+  arr.splice(6, 0, '-');
+  arr.splice(3, 0, ') ');
+  arr.splice(0, 0, '(');
+  return arr.join('');
 }
 
 module.exports = {

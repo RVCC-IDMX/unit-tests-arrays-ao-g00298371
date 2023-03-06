@@ -42,10 +42,6 @@
  * @returns {string} - the character at the index
  */
 function findTheCharacterAtIndex(str, indx) {
-  if (indx < 0 || indx >= str.length) {
-    throw new Error(`Invalid index ${indx}.`);
-  }
-
   return str.charAt(indx);
 }
 
