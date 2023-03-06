@@ -1,3 +1,5 @@
+/* eslint-disable comma-dangle */
+/* eslint-disable no-undef */
 const {
   findTheCharacterAtIndex,
   sliceTheString,

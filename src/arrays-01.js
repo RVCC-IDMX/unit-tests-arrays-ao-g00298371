@@ -78,6 +78,7 @@ function createSizedArray(size) {
  */
 function modifyArrayByAdding(arr) {
   arr.push(1);
+  arr.unshift(1);
   return arr;
 }
 
@@ -100,9 +101,8 @@ function modifyArrayByDeleting(arr) {
  * @returns {*} - the element at the specified index
  * ? example: [1, 2, 3, 4, 5], index = 2 => 3
  */
-function findElementAtIndex(arr, index, value) {
-  arr[index] = value; // replace the element at the specified index with the new value
-  return arr; // return the modified array
+function findElementAtIndex(arr, index) {
+  return arr[index];
 }
 
 /**

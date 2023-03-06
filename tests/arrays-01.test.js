@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const {
   getFirstValue,
   makeArray,
@@ -41,7 +42,7 @@ test('createSizedArray', () => {
 
 test('modifyArrayByAdding', () => {
   expect(typeof modifyArrayByAdding([])).toBe('object');
-  // expect(modifyArrayByAdding([])).toEqual([1, 1]);
+  expect(modifyArrayByAdding([])).toEqual([1, 1]);
   expect(modifyArrayByAdding([1, 2, 3])).toEqual([1, 1, 2, 3, 1]);
 });
 

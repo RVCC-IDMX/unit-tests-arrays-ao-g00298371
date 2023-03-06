@@ -71,7 +71,8 @@ function findTheFirstEvenNumber(arr) {
  * ? example: ["ant", "Bug", "cat", "Dog"] => ["Bug","Dog","ant","cat"]
  * ? must use the sort() array method - https://youtu.be/3bLjcUmWveA
  */
-function sortCaseSensitive(arr) {
+function sortCaseSensitive(arrOriginal) {
+  const arr = [...arrOriginal];
   return arr.sort();
 }
 
@@ -114,7 +115,12 @@ function reverseTheArray(arr) {
  * ? must use the concat() array method - https://bit.ly/3lZkNE2
  */
 function makeMirrorArray(arr) {
-  // write your code here & return value
+  const arrCopy = [...arr];
+  const arrCopy1 = [...arr];
+  arrCopy1.pop();
+  arrCopy1.reverse();
+  arrCopy.push(...arrCopy1);
+  return arrCopy;
 }
 
 /**
@@ -127,7 +133,7 @@ function makeMirrorArray(arr) {
  * ? must use the slice() array method - https://youtu.be/ok-dya7hNm0
  */
 function dropRight(arr, n) {
-  // write your code here & return value
+  return arr.slice(0, -n);
 }
 
 /**
@@ -140,7 +146,7 @@ function dropRight(arr, n) {
  * ? must use the slice() array method - https://youtu.be/ok-dya7hNm0
  */
 function dropLeft(arr, n) {
-  // write your code here & return value
+  return arr.slice(n);
 }
 
 /**
@@ -153,7 +159,7 @@ function dropLeft(arr, n) {
  * ? must use the includes() array method - https://youtu.be/GNnHej31OGY
  */
 function checkArrayForValue(arr, val) {
-  // write your code here & return value
+  return arr.includes(val);
 }
 
 module.exports = {
